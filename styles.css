@@ -486,6 +486,125 @@ p {
   color: var(--bone-dim);
 }
 
+/* Download buttons (Saffron) */
+.app--lead {
+  padding-top: 28px;
+}
+
+.get {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 6px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 10px 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--bone);
+  background: transparent;
+}
+
+.btn span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.btn b {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.btn i {
+  font-style: normal;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.btn--primary {
+  background: var(--brass-bright);
+  border-color: var(--brass-bright);
+  color: var(--ink);
+}
+
+.btn--primary i {
+  color: rgba(12, 11, 10, 0.72);
+}
+
+.btn--primary:hover {
+  background: var(--bone);
+  border-color: var(--bone);
+  transform: translateY(-1px);
+}
+
+.btn--soon {
+  cursor: default;
+  border-style: dashed;
+  color: var(--bone-dim);
+}
+
+.btn--soon i {
+  color: var(--quiet);
+}
+
+.ico {
+  flex-shrink: 0;
+}
+
+/* What you pay / what you get */
+.terms {
+  margin: 24px 0 0;
+  max-width: 720px;
+  border-top: 1px solid var(--line);
+}
+
+.terms div {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.terms dt {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--quiet);
+  margin-bottom: 4px;
+}
+
+.terms dd {
+  margin: 0;
+  font-family: Spectral, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--bone);
+}
+
+.support-row--soon {
+  cursor: default;
+}
+
+.support-row--soon .support-main {
+  font-size: clamp(15px, 1.4vw, 18px);
+  color: var(--bone-dim);
+}
+
+.support-row--soon:hover .support-main {
+  color: var(--bone-dim);
+}
+
+
 @media (max-width: 800px) {
   .hero {
     grid-template-columns: 1fr;
@@ -524,6 +643,10 @@ p {
     gap: 6px;
   }
 
+  .status {
+    white-space: normal;
+  }
+
   .nav {
     gap: 12px;
   }
@@ -531,6 +654,14 @@ p {
   .nav a {
     letter-spacing: 0.12em;
     font-size: 10px;
+  }
+
+  .get {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
   }
 }
 
