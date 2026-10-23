@@ -202,14 +202,6 @@ p {
   display: block;
 }
 
-.name-fa {
-  font-family: Gulzar, serif;
-  font-size: clamp(32px, 3vw, 52px);
-  line-height: 1;
-  color: var(--brass-bright);
-  margin: 0 0 0.12em;
-}
-
 .bio {
   font-family: Fraunces, Georgia, serif;
   font-weight: 500;
@@ -280,13 +272,6 @@ p {
   display: flex;
   align-items: baseline;
   gap: 12px;
-}
-
-.app-fa {
-  font-family: Gulzar, serif;
-  font-size: 0.72em;
-  color: var(--brass);
-  font-weight: 400;
 }
 
 .status {
@@ -629,12 +614,7 @@ p {
     align-items: flex-start;
   }
 
-  .name-fa {
-    font-size: clamp(28px, 8vw, 40px);
-    margin-top: 8px;
-  }
-
-  .facts {
+    .facts {
     grid-template-columns: 1fr;
   }
 
